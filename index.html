@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <div class="photo-container">
-            <img src="assets/flo1.jpg" alt="My Love" class="profile-photo">
+        <button id="revealButton" onclick="revealContent()">Click Here to See the Surprise!</button>
+        <div id="hiddenContent" style="display: none;">
+            <div class="photo-container">
+                <img src="assets/flo1.jpg" alt="My Love" class="profile-photo"> <!-- Update the file extension if needed -->
+            </div>
+            <h1>🎉 Happy New Year! 🎉</h1>
+            <p>May your year be filled with love, joy, and endless happiness!</p>
         </div>
-        <h1>🎉 Happy New Year My Love! 🎉</h1>
-        <p>May your year be filled with love, joy, and endless happiness!</p>
-        <button id="revealButton">Click for a Sweet Message!</button>
         <p id="sweetMessage" class="hidden">You make every day feel like a celebration! ❤️</p>
         <div class="heart"></div>
         <div class="heart"></div>
