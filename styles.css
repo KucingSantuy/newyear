@@ -33,6 +33,18 @@ body {
     border: 5px solid #9b59b6; /* Lavender border */
 }
 
+.shared-photo-container {
+    margin: 20px 0; /* Space around the shared photo */
+}
+
+.shared-photo {
+    width: 30%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Limit max width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
 h1 {
     font-size: 3.5em;
     margin: 0;
@@ -63,15 +75,6 @@ button:hover {
 
 .hidden {
     display: none;
-}
-
-.heart {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #9b59b6; /* Lavender hearts */
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    animation: float 3s ease-in-out infinite;
 }
 
 .heart:nth-child(3) {

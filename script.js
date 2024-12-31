@@ -1,4 +1,8 @@
-function revealContent() {
-    var content = document.getElementById('hiddenContent');
-    content.style.display = 'block'; // Change display to block to show the content
-}
+document.getElementById("revealButton").addEventListener("click", function() {
+    const message = document.getElementById("sweetMessage");
+    if (message.classList.contains("hidden")) {
+        message.classList.remove("hidden");
+    } else {
+        message.classList.add("hidden");
+    }
+});
