@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc); /* Lavender to light blue gradient */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for better contrast */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.photo-container {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the image covers the circle */
+    border: 5px solid #9b59b6; /* Lavender border */
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+    animation: bounce 1s infinite alternate;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #9b59b6; /* Lavender button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8e44ad; /* Darker lavender on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+
+.heart:nth-child(3) {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0.5s;
+}
+
+.heart:nth-child(2) {
+    top: 40%;
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(1) {
+    top: 60%;
+    left: 30%;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
