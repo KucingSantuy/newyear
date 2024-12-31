@@ -6,3 +6,8 @@ document.getElementById("revealButton").addEventListener("click", function() {
         message.classList.add("hidden");
     }
 });
+
+window.onload = function() {
+    const music = document.getElementById("backgroundMusic");
+    music.play();
+};
